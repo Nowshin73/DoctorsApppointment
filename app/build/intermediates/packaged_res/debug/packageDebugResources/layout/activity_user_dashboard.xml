@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="313dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="64dp"
+            android:text="Logout"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="163dp"
+            android:background="#9C27B0"
+            android:text="View My Appointments"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBook" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Your Name"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerDoctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Spinner
+            android:id="@+id/spinnerDoctor"
+            android:layout_width="319dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="316dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/select_date"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerDoctor" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="314dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="Select Time"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextReason"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+        <EditText
+            android:id="@+id/editTextReason"
+            android:layout_width="314dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Reason for Visit"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTime" />
+
+        <Button
+            android:id="@+id/buttonBook"
+            android:layout_width="313dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="24dp"
+            android:text="Book Appointment"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/buttonHistory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextReason" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Book an Appointment"
+            android:textColor="@color/purple_500"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

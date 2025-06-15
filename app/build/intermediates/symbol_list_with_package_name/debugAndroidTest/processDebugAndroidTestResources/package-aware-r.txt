@@ -1,0 +1,3 @@
+com.example.doctorappointment.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

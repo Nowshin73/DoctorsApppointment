@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DoctorAppointment</string>
+    <string name="select_date">Select Date</string>
+</resources>
